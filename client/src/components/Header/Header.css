@@ -1,0 +1,171 @@
+.header{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  height:70px;
+  background:#111;
+  display:flex;
+  align-items:center;
+  padding:0 34px;
+  z-index:2000;
+  border-bottom:1px solid #252525;
+  box-sizing:border-box;
+}
+
+.header-left{
+  display:flex;
+  align-items:center;
+  gap:38px;
+  width:430px;
+  flex-shrink:0;
+}
+
+.menu-button{
+  width:30px;
+  height:30px;
+  padding:0;
+  border:0;
+  background:transparent;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:6px;
+  cursor:pointer;
+}
+
+.menu-button span{
+  display:block;
+  width:28px;
+  height:3px;
+  background:#fff;
+  border-radius:3px;
+}
+
+.header-logo{
+  width:212px;
+  height:auto;
+  max-height:52px;
+  object-fit:contain;
+  object-position:left center;
+}
+
+.header-search{
+  flex:1;
+  height:55px;
+  max-width:730px;
+  display:flex;
+  background:#181818;
+  border:1px solid #292929;
+  border-radius:34px;
+  overflow:hidden;
+  margin:0 auto;
+}
+
+.header-search input{
+  flex:1;
+  min-width:0;
+  border:0;
+  outline:0;
+  background:transparent;
+  color:#fff;
+  padding:0 26px;
+  font-size:19px;
+}
+
+.header-search input::placeholder{
+  color:#777;
+}
+
+.search-button{
+  width:80px;
+  border:0;
+  border-left:1px solid #292929;
+  background:#1d1d1d;
+  color:#aaa;
+  font-size:32px;
+  cursor:pointer;
+}
+
+.header-actions{
+  width:230px;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  gap:34px;
+  flex-shrink:0;
+}
+
+.header-action{
+  border:0;
+  background:transparent;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.video-action{
+  color:#ff4141;
+  font-size:29px;
+}
+
+.bell-action{
+  color:#a855f7;
+  font-size:28px;
+}
+
+.profile-action{
+  width:32px;
+  height:32px;
+  border:3px solid #a855f7;
+  border-radius:50%;
+  color:#a855f7;
+  font-size:16px;
+}
+
+@media(max-width:1200px){
+  .header-left{
+    width:360px;
+  }
+
+  .header-logo{
+    width:190px;
+  }
+
+  .header-actions{
+    width:190px;
+    gap:22px;
+  }
+}
+
+@media(max-width:768px){
+  .header{
+    height:72px;
+    padding:0 20px;
+  }
+
+  .header-left{
+    width:auto;
+    gap:20px;
+  }
+
+  .header-logo{
+    width:170px;
+  }
+
+  .header-search{
+    height:48px;
+    margin:0 15px;
+  }
+
+  .header-actions{
+    width:auto;
+    gap:12px;
+  }
+
+  .video-action,
+  .bell-action{
+    display:none;
+  }
+}
