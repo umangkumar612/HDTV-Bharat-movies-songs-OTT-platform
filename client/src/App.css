@@ -1,21 +1,17 @@
-.app-main {
-  min-height: calc(100vh - 72px);
-  margin-top: 72px;
-  transition: margin-left 0.25s ease;
-  color:black
+.app-main{
+  min-height:calc(100vh - 72px);
+  margin-top:72px;
+  transition:margin-left 0.25s ease;
 }
-
-.app-main.sidebar-open {
-  margin-left: 240px;
+.app-main.sidebar-open{
+  margin-left:260px;
 }
-
-.app-main.sidebar-closed {
-  margin-left: 72px;
+.app-main.sidebar-closed{
+  margin-left:0;
 }
-
-@media (max-width: 600px) {
+@media(max-width:600px){
   .app-main.sidebar-open,
-  .app-main.sidebar-closed {
-    margin-left: 0;
+  .app-main.sidebar-closed{
+    margin-left:0;
   }
 }
